@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		CB8D668A24925A87008AF5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8D668924925A87008AF5C8 /* Assets.xcassets */; };
 		CB8D668D24925A87008AF5C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8D668C24925A87008AF5C8 /* Preview Assets.xcassets */; };
 		CB8D669024925A87008AF5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8D668E24925A87008AF5C8 /* LaunchScreen.storyboard */; };
+		CB8D669824925AED008AF5C8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CB8D669724925AED008AF5C8 /* Podfile */; };
+		CB8D669A24925B43008AF5C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669924925B43008AF5C8 /* MapView.swift */; };
+		CB8D669C24925C19008AF5C8 /* ZoneMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */; };
+		CB8D669E24925C40008AF5C8 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669D24925C40008AF5C8 /* BubbleView.swift */; };
+		D89BB1B6AD200E874DC05382 /* Pods_mapbox_issue_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapbox_issue_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1FF027E81D7477533A47DE /* Pods-mapbox-issue-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-issue-demo.debug.xcconfig"; path = "Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CB8D668024925A84008AF5C8 /* mapbox-issue-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapbox-issue-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8D668324925A84008AF5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB8D668524925A84008AF5C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		CB8D668C24925A87008AF5C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB8D668F24925A87008AF5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB8D669124925A87008AF5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8D669724925AED008AF5C8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CB8D669924925B43008AF5C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneMapAnnotation.swift; sourceTree = "<group>"; };
+		CB8D669D24925C40008AF5C8 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		F88BF3A74B0344389123959E /* Pods-mapbox-issue-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-issue-demo.release.xcconfig"; path = "Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89BB1B6AD200E874DC05382 /* Pods_mapbox_issue_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0235317B3833B09E68074440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D32FEE0DEDE8792F89D476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF1FF027E81D7477533A47DE /* Pods-mapbox-issue-demo.debug.xcconfig */,
+				F88BF3A74B0344389123959E /* Pods-mapbox-issue-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB8D667724925A84008AF5C8 = {
 			isa = PBXGroup;
 			children = (
 				CB8D668224925A84008AF5C8 /* mapbox-issue-demo */,
 				CB8D668124925A84008AF5C8 /* Products */,
+				CB8D669724925AED008AF5C8 /* Podfile */,
+				B5D32FEE0DEDE8792F89D476 /* Pods */,
+				0235317B3833B09E68074440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +89,16 @@
 		CB8D668224925A84008AF5C8 /* mapbox-issue-demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB8D669F24926215008AF5C8 /* Map */,
 				CB8D668324925A84008AF5C8 /* AppDelegate.swift */,
 				CB8D668524925A84008AF5C8 /* SceneDelegate.swift */,
 				CB8D668724925A84008AF5C8 /* ContentView.swift */,
+				CB8D669924925B43008AF5C8 /* MapView.swift */,
 				CB8D668924925A87008AF5C8 /* Assets.xcassets */,
 				CB8D668E24925A87008AF5C8 /* LaunchScreen.storyboard */,
 				CB8D669124925A87008AF5C8 /* Info.plist */,
 				CB8D668B24925A87008AF5C8 /* Preview Content */,
+				CB8D669D24925C40008AF5C8 /* BubbleView.swift */,
 			);
 			path = "mapbox-issue-demo";
 			sourceTree = "<group>";
@@ -75,6 +111,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CB8D669F24926215008AF5C8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB8D669424925A87008AF5C8 /* Build configuration list for PBXNativeTarget "mapbox-issue-demo" */;
 			buildPhases = (
+				F84B02AFFBD9A655AC6B2D8D /* [CP] Check Pods Manifest.lock */,
 				CB8D667C24925A84008AF5C8 /* Sources */,
 				CB8D667D24925A84008AF5C8 /* Frameworks */,
 				CB8D667E24925A84008AF5C8 /* Resources */,
+				9FEDA97DC5E40674F5D725DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,20 +181,66 @@
 			files = (
 				CB8D669024925A87008AF5C8 /* LaunchScreen.storyboard in Resources */,
 				CB8D668D24925A87008AF5C8 /* Preview Assets.xcassets in Resources */,
+				CB8D669824925AED008AF5C8 /* Podfile in Resources */,
 				CB8D668A24925A87008AF5C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9FEDA97DC5E40674F5D725DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84B02AFFBD9A655AC6B2D8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mapbox-issue-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB8D667C24925A84008AF5C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8D669E24925C40008AF5C8 /* BubbleView.swift in Sources */,
 				CB8D668424925A84008AF5C8 /* AppDelegate.swift in Sources */,
+				CB8D669A24925B43008AF5C8 /* MapView.swift in Sources */,
 				CB8D668624925A84008AF5C8 /* SceneDelegate.swift in Sources */,
 				CB8D668824925A84008AF5C8 /* ContentView.swift in Sources */,
+				CB8D669C24925C19008AF5C8 /* ZoneMapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,7 @@
 		};
 		CB8D669524925A87008AF5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1FF027E81D7477533A47DE /* Pods-mapbox-issue-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +394,7 @@
 		};
 		CB8D669624925A87008AF5C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88BF3A74B0344389123959E /* Pods-mapbox-issue-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
