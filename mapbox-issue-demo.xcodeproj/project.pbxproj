@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB82CF63FF68D73CB62634A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB82B1716AF0C3DCDECDF6A /* MapView.swift */; };
 		5CB82E4F2514ADF92CB3A5A7 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5CB82845F567644B6D86C7D0 /* Video.mp4 */; };
 		CB8D668424925A84008AF5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D668324925A84008AF5C8 /* AppDelegate.swift */; };
 		CB8D668624925A84008AF5C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D668524925A84008AF5C8 /* SceneDelegate.swift */; };
@@ -15,7 +16,6 @@
 		CB8D668D24925A87008AF5C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8D668C24925A87008AF5C8 /* Preview Assets.xcassets */; };
 		CB8D669024925A87008AF5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8D668E24925A87008AF5C8 /* LaunchScreen.storyboard */; };
 		CB8D669824925AED008AF5C8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CB8D669724925AED008AF5C8 /* Podfile */; };
-		CB8D669A24925B43008AF5C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669924925B43008AF5C8 /* MapView.swift */; };
 		CB8D669C24925C19008AF5C8 /* ZoneMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */; };
 		CB8D669E24925C40008AF5C8 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D669D24925C40008AF5C8 /* BubbleView.swift */; };
 		D89BB1B6AD200E874DC05382 /* Pods_mapbox_issue_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */; };
@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapbox_issue_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB82845F567644B6D86C7D0 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file.mp4; path = Video.mp4; sourceTree = "<group>"; };
+		5CB82B1716AF0C3DCDECDF6A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AF1FF027E81D7477533A47DE /* Pods-mapbox-issue-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-issue-demo.debug.xcconfig"; path = "Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CB8D668024925A84008AF5C8 /* mapbox-issue-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapbox-issue-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8D668324925A84008AF5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		CB8D668F24925A87008AF5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB8D669124925A87008AF5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8D669724925AED008AF5C8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		CB8D669924925B43008AF5C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneMapAnnotation.swift; sourceTree = "<group>"; };
 		CB8D669D24925C40008AF5C8 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		F88BF3A74B0344389123959E /* Pods-mapbox-issue-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-issue-demo.release.xcconfig"; path = "Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +96,6 @@
 				CB8D668324925A84008AF5C8 /* AppDelegate.swift */,
 				CB8D668524925A84008AF5C8 /* SceneDelegate.swift */,
 				CB8D668724925A84008AF5C8 /* ContentView.swift */,
-				CB8D669924925B43008AF5C8 /* MapView.swift */,
 				CB8D668924925A87008AF5C8 /* Assets.xcassets */,
 				CB8D668E24925A87008AF5C8 /* LaunchScreen.storyboard */,
 				CB8D669124925A87008AF5C8 /* Info.plist */,
@@ -118,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8D669B24925C19008AF5C8 /* ZoneMapAnnotation.swift */,
+				5CB82B1716AF0C3DCDECDF6A /* MapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -241,10 +241,10 @@
 			files = (
 				CB8D669E24925C40008AF5C8 /* BubbleView.swift in Sources */,
 				CB8D668424925A84008AF5C8 /* AppDelegate.swift in Sources */,
-				CB8D669A24925B43008AF5C8 /* MapView.swift in Sources */,
 				CB8D668624925A84008AF5C8 /* SceneDelegate.swift in Sources */,
 				CB8D668824925A84008AF5C8 /* ContentView.swift in Sources */,
 				CB8D669C24925C19008AF5C8 /* ZoneMapAnnotation.swift in Sources */,
+				5CB82CF63FF68D73CB62634A /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
