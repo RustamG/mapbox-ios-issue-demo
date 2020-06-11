@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5CB82CF63FF68D73CB62634A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB82B1716AF0C3DCDECDF6A /* MapView.swift */; };
 		5CB82E4F2514ADF92CB3A5A7 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5CB82845F567644B6D86C7D0 /* Video.mp4 */; };
+		5CB82F06B553CEA55C8C6031 /* Floating-annotation-bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB820417A69385D210C2D3B /* Floating-annotation-bug.png */; };
 		CB8D668424925A84008AF5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D668324925A84008AF5C8 /* AppDelegate.swift */; };
 		CB8D668624925A84008AF5C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D668524925A84008AF5C8 /* SceneDelegate.swift */; };
 		CB8D668824925A84008AF5C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D668724925A84008AF5C8 /* ContentView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		392A2665C2B6684181A2430C /* Pods_mapbox_issue_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mapbox_issue_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB820417A69385D210C2D3B /* Floating-annotation-bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Floating-annotation-bug.png"; sourceTree = "<group>"; };
 		5CB82845F567644B6D86C7D0 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file.mp4; path = Video.mp4; sourceTree = "<group>"; };
 		5CB82B1716AF0C3DCDECDF6A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AF1FF027E81D7477533A47DE /* Pods-mapbox-issue-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapbox-issue-demo.debug.xcconfig"; path = "Target Support Files/Pods-mapbox-issue-demo/Pods-mapbox-issue-demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				B5D32FEE0DEDE8792F89D476 /* Pods */,
 				0235317B3833B09E68074440 /* Frameworks */,
 				5CB82845F567644B6D86C7D0 /* Video.mp4 */,
+				5CB820417A69385D210C2D3B /* Floating-annotation-bug.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +190,7 @@
 				CB8D669824925AED008AF5C8 /* Podfile in Resources */,
 				CB8D668A24925A87008AF5C8 /* Assets.xcassets in Resources */,
 				5CB82E4F2514ADF92CB3A5A7 /* Video.mp4 in Resources */,
+				5CB82F06B553CEA55C8C6031 /* Floating-annotation-bug.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
